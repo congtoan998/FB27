@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend> Thông tin Cá nhân </legend>
+            <div>
+                <label for="fname">Họ, Chữ đệm</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Tên</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="checkbox" id="gender1" name="gender1" value="Men">
+                <label for="vehicle1"> Nam</label><br>
+                <input type="checkbox" id="gender2" name="gender2" value="Woman">
+                <label for="vehicle2"> Nữ</label><br>
+            </div>
+
+            <div>
+                <label for="PlaceBirth">Nơi Sinh(Tỉnh hay Thành Phố)</label>
+                <input type="text" id="PlaceBirth" name="PlaceBirth">
+                <label for="Birth">Ngày Tháng Năm Sinh</label>
+                <input type="date" id="Birth" name="Birth"><br><br>
+                <div class="form-group">
+                    <label class="control-label">Dân Tộc</label>
+                    <select name="Nation" class="form-control selectpicker">
+                        <option value=" ">Vui lòng chọn dân tộc của bạn</option>
+                        <option>Kinh</option>
+                        <option>Tày</option>
+                        <option>Thái</option>
+                        <option>Hoa</option>
+                        <option>Khơ-me</option>
+                        <option>Mường</option>
+                        <option>Nùng</option>
+                        <option>HMông</option>
+                        <option>Dao</option>
+                        <option>Gia-rai</option>
+                        <option>Ngái</option>
+                        <option>Ê-đê</option>
+                        <option>Ba na</option>
+                        <option>Xơ-Đăng</option>
+                        <option>Sán Chay</option>
+                        <option>Cơ-ho</option>
+                        <option>Chăm</option>
+                        <option>Sán Dìu</option>
+                        <option>Hrê</option>
+                        <option>Mnông</option>
+                        <option>Ra-glai</option>
+                        <option>Xtiêng</option>
+                        <option>Bru-Vân Kiều</option>
+                        <option>Thổ</option>
+                        <option>Giáy</option>
+                        <option>Cơ-tu</option>
+                        <option>Gié Triêng</option>
+                        <option>Mạ</option>
+                        <option>Khơ-mú</option>
+                        <option>Co</option>
+                        <option>Tà-ôi</option>
+                        <option>Chơ-ro</option>
+                        <option>Kháng</option>
+                        <option>Xinh-mun</option>
+                        <option>Hà Nhì</option>
+                        <option>Chu ru</option>
+                        <option>Lào</option>
+                        <option>La Chí</option>
+                        <option>La Ha</option>
+                        <option>Phù Lá</option>
+                        <option>La Hủ</option>
+                        <option>Lự</option>
+                        <option>Lô Lô</option>
+                        <option>Chứt</option>
+                        <option>Mảng</option>
+                        <option>Pà Thẻn</option>
+                        <option>Co Lao</option>
+                        <option>Cống</option>
+                        <option>Bố Y</option>
+                        <option>Si La</option>
+                        <option>Pu Péo</option>
+                        <option>Brâu</option>
+                        <option>Ơ Đu</option>
+                        <option>Rơ măm</option>
+                    </select>
+                </div>
+                <input type="checkbox" id="foreign" name="foreign" value="confirm">
+                <label for="foreign"> Quốc tịch nước ngoài</label><br><br>
+            </div>
+
+            <div>
+                <div>
+                    <label for="citycode">Mã tỉnh/thành phố</label>
+                    <input type="number" name="citycode" id="citycode" >
+                    <label for="districcode">Mã quận/huyện</label>
+                    <input type="number" name="districcode" id="districcode" >
+                    <label for="wardscode">Mã phường/xã</label>
+                    <input type="number" name="wardscode" id="wardscode" >
+                </div>
+                <br>
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" name="address"><br><br>
+                <input type="checkbox" id="thuongtru" name="thuongtru" value="confirm">
+                <label for="thuongtru"> Nơi thường trú trên 18 tháng tại khu vực 1 </label><br><br>
+                <input type="checkbox" id="thuongtru" name="thuongtru" value="confirm">
+                <label for="thuongtru"> Nơi thường trú trên 18 tháng tại xã đặt biệt khó khăn </label><br><br>
+            </div>
+            <h3> Nơi học THPT hoặc tương đương
+               <ul>
+                    <li>
+                        <label for="year10">Năm lớp 10</label>
+                        <input type="text" name="year10" id="year10">
+                        <label for="provincecode">Mã Tỉnh</label>
+                        <input type="number" name="provincecode" id="provincecode" >
+                        <label for="schoolcode">Mã Trường</label>
+                        <input type="number" name="schoolcode" id="schoolcode" >
+                    </li>
+                    <li>
+                        <label for="year11">Năm lớp 11</label>
+                        <input type="text" name="year11" id="year11">
+                        <label for="provincecode">Mã Tỉnh</label>
+                        <input type="number" name="provincecode" id="provincecode" >
+                        <label for="schoolcode">Mã Trường</label>
+                        <input type="number" name="schoolcode" id="schoolcode" >
+                    </li>
+                    <li>
+                        <label for="year12">Năm lớp 12</label>
+                        <input type="text" name="year12" id="year12">
+                        <label for="provincecode">Mã Tỉnh</label>
+                        <input type="text" name="provincecode" id="provincecode" >
+                        <label for="schoolcode">Mã Trường</label>
+                        <input type="text" name="schoolcode" id="schoolcode" >
+                    </li>
+                    <li>
+                        <label for="nameclass12">Tên lớp 12</label>
+                        <input type="text" name="nameclass12" id="nameclass12">
+                        <label for="provincecode">Mã Tỉnh</label>
+                        <input type="text" name="provincecode" id="provincecode" >
+                        <label for="schoolcode">Mã Trường</label>
+                        <input type="text" name="schoolcode" id="schoolcode" >
+                    </li>
+                </ul>
+            </h3><span>(Ghi tên và địa chỉ trường: huyện/quận, tỉnh/thành và ghi mã tỉnh, mã trường THPT)</span>
+            <h3>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </h3>
+
+            <div>
+                <h3>Họ tên, số điện thoại và địa chỉ người liên hệ</h3>
+                <textarea name="parents" id="parents" cols="50" rows="5"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Thông Tin Đăng Kí Thi</legend>
+            <h3>
+                <label for="yesorno">Thí sinh có dùng kết quả thi để xét tuyển sinh ĐH, CĐSP</label>
+                <input type="checkbox" name="yesorno" id="yesorno" value="confirm">
+            </h3>
+            <h3>
+                <label for="yesorno">Thí sinh học chương trình THPT</label>
+                <input type="checkbox" name="hocTHPT" id="hocTHPT" value="confirm">
+                <label for="yesorno">Thí sinh học chương trình GDTX cấp THPT</label>
+                <input type="checkbox" name="hocGDTX" id="hocGDTX" value="confirm">
+            </h3>
+            <h3>
+                <label for="yesorno">Thí sinh tự do chưa tốt nghiệp THPT</label>
+                <input type="checkbox" name="CTN" id="CTN" value="confirm">
+                <label for="yesorno">Thí sinh tự do đã tốt nghiệp THPT</label>
+                <input type="checkbox" name="DTN" id="DTN" value="confirm">
+            </h3>
+            <h3>
+                <label for="testplace">Dự thi tại Hội đồng thi</label>
+                <input type="text" name="testplace" id="testplace">
+                <label for="testplacecode">Mã Hội đồng thi</label>
+                <input type="number" name="testplacecode" id="testplacecode" >
+            </h3>
+            <h3>
+                <label for="registerexamplace">Nơi ĐKDT</label>
+                <input type="text" name="registerexamplace" id="registerexamplace">
+                <label for="registerexamplacecode">Mã đơn vị ĐKDT</label>
+                <input type="number" name="registerexamplacecode" id="registerexamplacecode" >
+            </h3>
+            <div>
+                <h3>Đăng kí bài thi/môn thi</h3>
+                <p>Thí sinh đăng kí dự thi nào thì tích vào ô bài thi tương ứng, riêng đối với bài thi ngoại ngữ, thí sinh chọn mã trong ô tương ứng: N1 - Tiếng Anh, N2 - Tiếng Nga, N3 - Tiếng Pháp, N4 - Tiếng Trung Quốc, N5 - Tiếng Đức, N6 - Tiếng Nhật, N7 - Tiếng Hàn</p>
+                <label for="baithi">Đăng kí bài thi</label><span>(Thí sinh chỉ được đăng kí một bài thi tổ hợp KHTN hoặc KHXH)</span>
+                <div>
+                    <label for="math">Toán</label>
+                    <input type="checkbox" name="math" id="math">
+                    <label for="literature">Ngữ Văn</label>
+                    <input type="checkbox" name="literature" id="literature">
+                    <label for="language">Ngoại Ngữ</label>
+                    <select name="language" id="language">
+                        <option value=" "></option>
+                        <option>N1</option>
+                        <option>N2</option>
+                        <option>N3</option>
+                        <option>N4</option>
+                        <option>N5</option>
+                        <option>N6</option>
+                        <option>N7</option>
+                    </select>
+                    <label for="natural">KHTH</label>
+                    <input type="checkbox" name="natural" id="natural">
+                    <label for="social">KHXH</label>
+                    <input type="checkbox" name="social" id="social">
+                </div>
+            </div>
+
+            <div>
+                <h3>Đăng kí môn thi thành phần trông bài thi tổ hợp</h3><span>(Chỉ dành cho thí sinh tự do không chọn dự thi toàn bài thi tổ hợp)</span>
+                <div>
+                    <label for="physics">Vật Lý</label>
+                    <input type="checkbox" name="physics" id="physics">
+                    <label for="chemistry">Hoá Học</label>
+                    <input type="checkbox" name="chemistry" id="chemistry">
+                    <label for="biology">Sinh Học</label>
+                    <input type="checkbox" name="biology" id="biology">
+                    <label for="history">Lịch Sử</label>
+                    <input type="checkbox" name="history" id="history">
+                    <label for="geography">Địa Lý</label>
+                    <input type="checkbox" name="geography" id="geography">
+                    <label for="GDCD">GDCD</label>
+                    <input type="checkbox" name="GDCD" id="GDCD">
+                </div>
+            </div>
+
+            <h3>Đăng ký miễn thi bài thi môn Ngoại Ngữ trong xét công nhận tốt nghiệp THPT hoặc đăng ký để xét tuyển sinh:</h3>
+            <span>(Thí sinh ghi loại chứng chỉ ngoại ngữ đủ điều kiện theo quy định hoặc ghi rõ là thành viên đội tuyển quốc gia dự thi Olympic Môn Ngoại Ngữ để được miễn thi):</span>
+            <input type="text" name="certificate" id="certificate">
+            <label for="testpoint">Điểm thi</label><span>(Nếu chứng chỉ có điểm thi, thí sinh ghi điểm thi vào ô này)</span>
+            <input type="text" name="testpoint" id="testpoint">
+            <h3>Đăng ký bài/môn thi đề nghị bảo lưu để xét tốt nghiệp của thí sinh tự do</h3><span>(Thí sinh ghi rõ điểm bài/môn thi xin đề nghị bảo lưu ở ô tương ứng)</span>
+            <div>
+                <label for="math">Toán</label>
+                <input type="text" name="math" id="math">
+                <label for="literature">Ngữ Văn</label>
+                <input type="text" name="literature" id="literature">
+                <label for="history">Lịch Sử</label>
+                <input type="text" name="history" id="history">
+                <label for="geography">Địa Lý</label>
+                <input type="text" name="geography" id="geography">
+                <label for="GDCD">GDCD</label>
+                <input type="text" name="GDCD" id="GDCD">
+                <label for="physics">Vật Lý</label>
+                <input type="text" name="physics" id="physics">
+                <label for="chemistry">Hoá Học</label>
+                <input type="text" name="chemistry" id="chemistry">
+                <label for="biology">Sinh Học</label>
+                <input type="text" name="biology" id="biology">
+                <label for="language">Ngoại Ngữ</label>
+                <input type="text" name="language" id="language">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CAM ĐOAN VÀ XÁC NHẬN</legend>
+            <p>Tôi xin cam đoan những lời khai trong phiếu ĐKDT này là đúng sự thật. Nếu sai tôi xin chịu xử lý theo các quy định hiện hành </p>
+            <label for="myfile">ẢNH 4X6:</label>
+            <input type="file" id="myfile" name="myfile">
+        </fieldset>
+    </form>
+</body>
+</html>
